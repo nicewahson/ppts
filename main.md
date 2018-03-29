@@ -1,4 +1,15 @@
 [slide]
+![wx](/img/wx.png) 
+
+electron vue-objccn 
+
+reactnative 80% cnoder
+
+[slide]
+
+js崛起(nodejs生态)
+
+[slide]
 # 前端工程化
 [slide]
 ## 什么是工程化？
@@ -14,10 +25,10 @@ React、Vue、AngularJS
 静态检查工具，JSLint/JSHint/ESLint
 代码规范，eslint-config-airbnb
 合理的模块划分和目录结构
-开发流程的规范化
+开发流程的规范化 (git提交)
 * 自动化，利用工具提高开发效率
 生成器工具，Yeoman
-构建工具，Gulp/Webpack
+构建工具，Gulp/Webpack parcel
 持续集成，Jenkins
 其它，mock/debug/proxy/test等
 
@@ -37,7 +48,23 @@ React、Vue、AngularJS
 态码）
 * 前后端需要有统一的API管理平台(apizza)
 * 先写文档，再开发
+
 [slide]
-![wx](/img/wx.png)
+![react](/img/react.png)
 [slide]
 ![目录](/img/mlbz.png)
+[slide]
+![ant](/img/ant.png)
+
+![ele](/img/ele.png)
+[slide]
+微信小程序
+
+灵活 方便 日活9亿
+[slide]
+开发(工具可选) 测试(体验版) 部署(开发工具)
+[slide]
+江湖不太平，努力爬到上游。
+
+thanks！
+

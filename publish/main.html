@@ -1,0 +1,187 @@
+<!--
+    Powered By nodeppt - This is probably the best web presentation tool so far!
+    version: 1.4.5
+    site: https://github.com/ksky521/nodeppt
+    date: 
+-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>nodeppt markdown - By </title>
+    <link rel="stylesheet" media="all" href="./css/nodeppt.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./css/phone.css">
+    
+    <link rel="stylesheet" href="./js/highlight/styles/monokai_sublime.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    
+<link rel="stylesheet" href="./css/theme.moon.css">
+</head>
+<body>
+<div class="slides">
+    <slides id="container">
+        <slide class="slide"><section class="slide-wrapper"><article>
+<p><img src="./img/wx.png" alt="wx"> </p>
+<p>electron vue-objccn </p>
+<p>reactnative 80% cnoder</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<p>js崛起(nodejs生态)</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>前端工程化</h1>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h2>什么是工程化？</h2>
+<p>把一系列开发工具、技术、规范及流程通过工具实现标准化和自动化</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h2>工程化内容</h2>
+<ul>
+<li>模块化，团队协作开发
+JS模块化，CommonJS/AMD/CMD/ES6
+CSS模块化，Sass/Less/Stylus/CSS Modules</li>
+<li>组件化，团队协作开发、提高代码复用性
+React、Vue、AngularJS</li>
+<li>规范化，提高可维护性和保证代码质量
+静态检查工具，JSLint/JSHint/ESLint
+代码规范，eslint-config-airbnb
+合理的模块划分和目录结构
+开发流程的规范化 (git提交)</li>
+<li>自动化，利用工具提高开发效率
+生成器工具，Yeoman
+构建工具，Gulp/Webpack parcel
+持续集成，Jenkins
+其它，mock/debug/proxy/test等</li>
+</ul>
+<h3>（前提：前后端分离）</h3>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h2>未分离弊端</h2>
+<ul>
+<li>前后端代码混杂在一起，难以维护</li>
+<li>需要花费很多的沟通成本</li>
+<li>应用的运行需要依赖后端复杂的开发环境</li>
+<li>庞大而缓慢的开发工具</li>
+<li>项目结构限制前端新技术的使用</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h3>前后端分离开发方式</h3>
+<ul>
+<li>前端有独立的代码仓库，独立的构建和发布流程</li>
+<li>和后端异步请求数据，约定接口规范（数据返回格式和结构、规范的状
+态码）</li>
+<li>前后端需要有统一的API管理平台(apizza)</li>
+<li>先写文档，再开发</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<img src="./img/react.png" alt="react">
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<img src="./img/mlbz.png" alt="目录">
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<img src="./img/ant.png" alt="ant">
+<img src="./img/ele.png" alt="ele">
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<p>微信小程序</p>
+<p>灵活 方便 日活9亿</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<p>开发(工具可选) 测试(体验版) 部署(开发工具)</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<p>江湖不太平，努力爬到上游。</p>
+<p>thanks！</p>
+
+</article></section></slide>
+        
+
+        <!-- <slide class="slide logoslide dark nobackground">
+            <article class="flexbox vcenter">
+                <h2 style="color: white;">Powered By nodeppt v1.4.5</h2>
+            </article>
+        </slide> -->
+        <div class="slideTip" id="tip"></div>
+    </slides>
+</div>
+<canvas id="drawBoard" class="draw-board" width="900" height="700"></canvas>
+<div class="progress"><span id="progress"></span></div>
+<div id="_buttons">
+    <div class="_btn-box" id="_btn-box" style="display:none;">
+        <button class="fa fa-arrow-circle-left" id="_btn-prev"></button>
+        <button class="fa fa-arrow-circle-right" id="_btn-next"></button>
+        <button class="fa fa-paint-brush" id="_btn-brush"></button>
+        <button class="fa fa-compress" id="_btn-overview" data-toggle="fa fa-expand"></button>
+    </div>
+    <button class="fa fa-bars" id="_btn-bar"  data-toggle="fa fa-close"></button>
+</div>
+<script src="./js/mixjs/lib/mix.0.3.0.min.js"></script>
+<script>
+    var ASSET_RELATIVE_DIR = ".";
+</script>
+<script>
+var base = location.protocol + '//' + location.host;
+
+var path = (location.pathname + '#').split('/').filter(function(v){
+    return !!v;
+});
+path.pop();
+path = path.join('/');
+if (typeof ASSET_RELATIVE_DIR === 'string') {
+    path = path + '/' + ASSET_RELATIVE_DIR;
+}
+MixJS.config({
+    baseURL: [ base, path, 'js'].join('/')+'/'
+});
+
+</script>
+<script src="./js/mixjs/lib/event/broadcast.js"></script>
+<script src="./js/nodeppt.js"></script>
+<script>
+Slide.init({
+    containerID: 'container',
+    drawBoardID: 'drawBoard',
+    slideClass: '.slide',
+    buildClass: '.build',
+    progressID: 'progress',
+    transition: 'move',
+    width: 1100,
+    dir: './',
+    
+    //打开下面的注释就开启postMessage方式
+    //访问网址127.0.0.1:8080/ppt/demo#client
+    control:{
+        type: 'postMessage',
+        args:{
+            isControl:  false
+        }
+    },
+    
+    tipID: 'tip'
+});
+MixJS.loadJS('highlight/highlight.pack.js',function(){
+    hljs.tabReplace = '  ';
+    hljs.initHighlightingOnLoad();
+});
+</script>
+
+
+<!--placeholder-->
+</body>
+</html>

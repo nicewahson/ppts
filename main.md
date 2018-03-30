@@ -53,6 +53,18 @@ React、Vue、AngularJS
 ![react](/img/react.png)
 [slide]
 ![目录](/img/mlbz.png)
+
+[slide]
+SPA(single page application)
+
+优点：体验友好 前后端关注点分离 后端通用
+
+缺点：首屏白屏 SEO
+
+解决：同构直出
+
+CSS in JS
+
 [slide]
 ![ant](/img/ant.png)
 
